@@ -8,7 +8,7 @@ subscribeButton.addEventListener("click",()=>{
     subscribeButton.classList.add("active");
     setTimeout(()=>{
         subscribeButton.classList.remove("active");
-    }, 100);
+    }, 200);
     
     if(toggle){
         setTimeout(()=>{
