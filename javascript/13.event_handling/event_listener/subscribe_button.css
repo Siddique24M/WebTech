@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#subscribe_container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#subscribe_button{
+    font-size: 8vw;
+    padding: 20px;
+    border-radius: 90px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+#subscribe_button.active{
+    transform: scale(0.85);
+}
+#ring_container{
+    display: none;
+}
+@keyframes animateBellIcon {
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}

@@ -1,0 +1,67 @@
+*{
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+#pacman_container{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    border-radius: 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    /*offset props*/
+    top: 40vh;
+    left: 50vw;
+}
+#eye_content{
+    height: 30px;
+    width: 30px;
+    background-color:black;
+    position: absolute;
+    top: 2vh;
+    right: 15%;
+    border-radius: 50px;
+}
+.pac_mouth{
+    background-color: black;
+    height: 3px;
+    width: 60px;
+}
+#upper_mouth{
+    position: absolute;
+    top: 55%;
+    right: -3%;
+    transform: rotate(-15deg);
+}
+#lower_mouth{
+    position: absolute;
+    top: 75%;
+    right: -2%;
+    transform: rotate(20deg);
+
+}
+#score_content{
+    color: black;
+    height: 50px;
+    width: 180px;
+    position: absolute;
+    top: 5vh;
+    left: 83%;
+    background-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+#score_container{
+    display: absolute;
+    z-index: 1;
+}
