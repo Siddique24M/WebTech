@@ -1,0 +1,150 @@
+*{
+    padding: 0x;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: ProductSans;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assets/fonts/Product\ Sans\ Regular.ttf);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mountain_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/RightBigMountainNight.png),url(../../assets/images/moon.png),url(../../assets/images/RightSmallMountainNight.png),url(../../assets/images/LeftSmallMountainNight.png),url(../../assets/images/SmallSun.png),url(../../assets/images/leftBigMountainNight.png),url(../../assets/images/space.png);
+    background-size: 50%,18%,50%,50%,25%,50%,100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 105%,2% 5%, 35% 105%, 65% 105%,80% 120%, 100% 105%, 0% 0%;
+    transition: all 3000ms ease-in-out;
+}
+#login_form_container:hover+#mountain_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/images/RightBigMountainDay.png),url(../../assets/images/moon.png),url(../../assets/images/RightSmallMountainDay.png),url(../../assets/images/LeftSmallMountainDay.png),url(../../assets/images/SmallSun.png),url(../../assets/images/leftBigMountainDay.png),url(../../assets/images/CartoonSky.png);
+    background-size: 50%,6%,50%,50%,40%,50%,100% 100%;
+    background-repeat: no-repeat;
+    background-position: -20% 105%,10% 95%, 15% 105%, 85% 105%, 115% -120%, 120% 105%, 0% 0%;
+}
+#login_form_container{
+    position: absolute;
+    display: flex;
+    width: 30vw;
+    height: 65vh;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px white;
+}
+.login_textfields_containers{
+    width: 100%;
+}
+
+/* Hovering Logics */
+#login_form_container:hover > .login_textfields::placeholder{
+    color: black;
+}
+#login_form_container:hover *{
+    transition: all 250ms;
+    color: black;
+}
+#login_form_container:hover{
+    box-shadow: 0px 0px 10px black;
+    border-color: black;
+}
+.login_textfields:hover{
+    transform: scale(1.05);
+}
+#login_form_container:hover >.login_textfields{
+    border-color: black;    
+}
+#login_form_container:hover>#login_icon_containers>.login_icons{
+    background-color: cadetblue;
+}
+#login_form_container:hover>#login_icon_containers>.login_icons .icons{
+    color: white;
+}
+#login_form_container:hover> #submit_button{
+    background-color: whitesmoke;
+}
+
+
+
+#login_heading{
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+.login_textfields{
+    width: 80%;
+    height: 10%;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.icon_textfield{
+    position: absolute;
+    color: white;
+}
+#username_icon{
+    top: 75px;
+    right: 50px;
+}
+#password_icon{
+    top: 130px;
+    right: 50px;
+}
+.login_textfields::placeholder{
+    color: white;
+    font-size: 20px;
+}
+#forget_password_link{
+    text-decoration: none;
+    color: white;
+}
+#submit_button{
+    color: white;
+    width: 80%;
+    height: 10%;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#or_continue_with{
+    color: white;
+}
+#dont_have_an_account{
+    color: white;
+}
+#login_icon_containers{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login_icons{
+    width: 20%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+}
+#register_link{
+    text-decoration: none;
+    color: white;
+}
