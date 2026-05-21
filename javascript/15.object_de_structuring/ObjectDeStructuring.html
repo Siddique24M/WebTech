@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructuring</title>
+    <script src="./ObjectDeStructuring.js" defer></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: ProductSans;
+        }
+        @font-face {
+            font-family: ProductSans;
+            src: url(../../project/assets/fonts/Product\ Sans\ Regular.ttf);
+        }
+        body{
+            padding: 20px;
+        }
+        #users_data_block{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <button class="buttons">first button</button>
+    <button class="buttons">second button</button>
+    <button class="buttons">third button</button>
+    <h1 id="student_data_block"></h1>
+    <h1 id="users_data_block">
+        <span class="users_data" id="first_user_data"></span>
+        <span class="users_data" id="second_user_data"></span>
+        <span class="users_data" id="third_user_data"></span>
+    </h1>
+</body>
+</html>
