@@ -16,7 +16,7 @@ body{
 #mountain_container{
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/images/RightBigMountainNight.png),url(../../assets/images/moon.png),url(../../assets/images/RightSmallMountainNight.png),url(../../assets/images/LeftSmallMountainNight.png),url(../../assets/images/SmallSun.png),url(../../assets/images/leftBigMountainNight.png),url(../../assets/images/space.png);
+    background-image: url(./assets/images/RightBigMountainNight.png),url(./assets/images/moon.png),url(./assets/images/RightSmallMountainNight.png),url(./assets/images/LeftSmallMountainNight.png),url(./assets/images/SmallSun.png),url(./assets/images/leftBigMountainNight.png),url(./assets/images/space.png);
     background-size: 50%,18%,50%,50%,25%,50%,100% 100%;
     background-repeat: no-repeat;
     background-position: 0% 105%,2% 5%, 35% 105%, 65% 105%,80% 120%, 100% 105%, 0% 0%;
@@ -25,7 +25,7 @@ body{
 #login_form_container:hover+#mountain_container{
     width: 100vw;
     height: 100vh;
-    background-image: url(../../assets/images/RightBigMountainDay.png),url(../../assets/images/moon.png),url(../../assets/images/RightSmallMountainDay.png),url(../../assets/images/LeftSmallMountainDay.png),url(../../assets/images/SmallSun.png),url(../../assets/images/leftBigMountainDay.png),url(../../assets/images/CartoonSky.png);
+    background-image: url(./assets/images/RightBigMountainDay.png),url(./assets/images/moon.png),url(./assets/images/RightSmallMountainDay.png),url(./assets/images/LeftSmallMountainDay.png),url(./assets/images/SmallSun.png),url(./assets/images/leftBigMountainDay.png),url(./assets/images/CartoonSky.png);
     background-size: 50%,6%,50%,50%,40%,50%,100% 100%;
     background-repeat: no-repeat;
     background-position: -20% 105%,10% 95%, 15% 105%, 85% 105%, 115% -120%, 120% 105%, 0% 0%;
